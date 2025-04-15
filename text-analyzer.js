@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const textInput = document.getElementById('text-input');
     const analyzeBtn = document.getElementById('analyze-btn');
     const clearBtn = document.getElementById('clear-btn');
-    const sampleBtn = document.getElementById('sample-btn');
+    //const sampleBtn = document.getElementById('sample-btn');
     
     // Stats elements
     const letterCount = document.getElementById('letter-count');
@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Event listeners
     analyzeBtn.addEventListener('click', analyzeText);
     clearBtn.addEventListener('click', clearAll);
-    sampleBtn.addEventListener('click', loadSampleText);
+   // sampleBtn.addEventListener('click', loadSampleText);
     
     /**
      * Main function to analyze the text
