@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Analyzer - Rishith Sunil</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="text-analyzer.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>Text Analyzer</h1>
+            <p>Engineering Student | Quantum Enthusiast | Chess Player</p>
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="container">
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#education">Education</a></li>
+                <li><a href="index.html#achievements">Achievements</a></li>
+                <li><a href="index.html#skills">Skills</a></li>
+                <li><a href="index.html#cv">CV</a></li>
+                <li><a href="text-analyzer.html" class="active">Text Analyzer</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Text Analyzer Section -->
+    <section id="text-analyzer">
+        <div class="container">
+            <h2 class="section-title">Advanced Text Analysis Tool</h2>
+            
+            <div class="input-area">
+                <label for="text-input">Write text here:</label>
+                <textarea id="text-input" placeholder="Enter or paste text to analyze..." rows="12"></textarea>
+                <div class="button-group">
+                    <button id="analyze-btn">Analyze Text</button>
+                    <button id="clear-btn">Clear</button>
+                </div>
+            </div>
+            
+            <div class="results-container">
+                <div class="results-section">
+                    <h3>Basic Text Statistics</h3>
+                    <div id="basic-stats" class="stats-grid">
+                        <div class="stat-box">
+                            <div class="stat-title">Letters</div>
+                            <div class="stat-value" id="letter-count">0</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-title">Words</div>
+                            <div class="stat-value" id="word-count">0</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-title">Spaces</div>
+                            <div class="stat-value" id="space-count">0</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-title">Newlines</div>
+                            <div class="stat-value" id="newline-count">0</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-title">Special Symbols</div>
+                            <div class="stat-value" id="special-count">0</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="results-section">
+                    <h3>Pronoun Analysis</h3>
+                    <div id="pronoun-results" class="token-results">
+                        <p>No data to display. Please analyze a text.</p>
+                    </div>
+                </div>
+                
+                <div class="results-section">
+                    <h3>Preposition Analysis</h3>
+                    <div id="preposition-results" class="token-results">
+                        <p>No data to display. Please analyze a text.</p>
+                    </div>
+                </div>
+                
+                <div class="results-section">
+                    <h3>Indefinite Article Analysis</h3>
+                    <div id="article-results" class="token-results">
+                        <p>No data to display. Please analyze a text.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Rishith Sunil. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://in.linkedin.com/in/rishith-sunil-776a68320" aria-label="LinkedIn">LinkedIn</a>
+                <a href="https://github.com/RSGitKnight/" aria-label="GitHub">GitHub</a>
+                <a href="mailto:rishith.sunil@research.iiit.ac.in" aria-label="Email">Email</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="text-analyzer.js"></script>
+</body>
+</html>

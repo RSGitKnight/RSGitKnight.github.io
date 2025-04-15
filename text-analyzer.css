@@ -1,0 +1,198 @@
+/* 
+   Text Analyzer Styles
+   Author: Rishith Sunil
+   Description: CSS styles for text analyzer tool
+*/
+
+/* ========== TEXT ANALYZER STYLES ========== */
+#text-analyzer {
+    background-color: #f9f9f9;
+}
+
+.input-area {
+    margin-bottom: 30px;
+}
+
+.input-area label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: #2c3e50;
+}
+
+#text-input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    resize: vertical;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+#text-input:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 10px rgba(52, 152, 219, 0.2);
+    outline: none;
+}
+
+.button-group {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+
+.button-group button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+#analyze-btn {
+    background-color: #3498db;
+    color: white;
+}
+
+#analyze-btn:hover {
+    background-color: #2980b9;
+}
+
+#clear-btn {
+    background-color: #e74c3c;
+    color: white;
+}
+
+#clear-btn:hover {
+    background-color: #c0392b;
+}
+
+
+.results-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+.results-section {
+    background-color: white;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.results-section h3 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+.stat-box {
+    background-color: #f5f7fa;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.stat-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.stat-title {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+    margin-bottom: 8px;
+}
+
+.stat-value {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.token-results {
+    max-height: 300px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+.token-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 15px;
+}
+
+.token-item {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f5f7fa;
+    padding: 12px 15px;
+    border-radius: 6px;
+    font-size: 0.95rem;
+}
+
+.token-name {
+    font-weight: 500;
+    color: #2c3e50;
+}
+
+.token-count {
+    font-weight: 600;
+    color: #3498db;
+}
+
+.token-group {
+    margin-bottom: 25px;
+}
+
+.token-group h4 {
+    margin-bottom: 12px;
+    color: #34495e;
+    padding-bottom: 5px;
+    border-bottom: 1px dashed #ddd;
+}
+
+/* ========== RESPONSIVE STYLES ========== */
+@media (max-width: 768px) {
+    .button-group {
+        flex-direction: column;
+    }
+    
+    .button-group button {
+        width: 100%;
+    }
+    
+    .stats-grid,
+    .token-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .stats-grid,
+    .token-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .results-section {
+        padding: 20px;
+    }
+}
+
+/* Navigation active link highlight */
+.nav-menu li a.active {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #3498db;
+}
